@@ -1,91 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="kr">
-	<!--begin::Head-->
-	<head>
-		<base href="">
-		<meta charset="utf-8" />
-		<title>1gram</title>
-		<meta name="description" content="1gram" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<!--begin::Head-->
 
-		<!--begin::Fonts-->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" >
-		<!--end::Fonts-->
+<head>
+	<!-- meta -->
+	<base href="">
+	<meta charset="utf-8" />
+	<title>1gram</title>
+	<meta name="description" content="1gram" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<!--begin::Fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+	<!--end::Fonts-->
 
 
-		<!--begin::Global Theme Styles(used by all pages)-->
-		<link href="./assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+	<!--begin::Global Theme Styles(used by all pages)-->
+	<link href="./assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 
-		<!--end::Global Theme Styles-->
+	<!--end::Global Theme Styles-->
 
-		<!--begin::Layout Themes(used by all pages)-->
-		<link href="./assets/css/themes/layout/header/base/light.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/css/themes/layout/header/menu/light.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/css/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
-		<link href="./assets/css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
+	<!--begin::Layout Themes(used by all pages)-->
+	<link href="./assets/css/themes/layout/header/base/light.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/css/themes/layout/header/menu/light.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/css/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
 
-		<!--end::Layout Themes-->
-		<link rel="shortcut icon" href="favicon.ico" />
-	</head>
-	<!--end::Head-->
+	<!--end::Layout Themes-->
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<!--end::Head-->
 
-	<!--begin::Body-->
-	<body>
-		<!-- begin::로그인박스 -->
-		<div class="content d-flex flex-column flex-column-fluid justify-content-center">
-			<div class="container align-self-center">
-					<div class="row justify-content-center">
-						<div class="col-12" style="max-width:500px">
-						<h1 class="text-primary text-center my-5 mt-sm-2 display-3"><strong>ADMIN</strong></h1>
-							<div class="card">
-								<div class="card-body">
-									<div class="px-3">
-										<form method="POST" action="" role="form">
-											<input name="_token" type="hidden" value="">
-											<div class="form-group input-group-lg mb-5">
-												<label for="username">이메일</label>
-												<input type="text" class="form-control" name="username" id="username" required="" placeholder="이메일을 입력하세요." data-parsley-error-message="이메일을 입력하세요.">
-											</div>
-											<div class="form-group input-group-lg mb-2">
-												<label for="userpassword">비밀번호</label>
-												<input type="password" class="form-control" name="password" id="userpassword" required="" placeholder="비밀번호를 입력하세요." data-parsley-error-message="비밀번호를 입력하세요.">
-											</div>
-											<label class="checkbox checkbox-inline">
-												<input type="checkbox">
-												<span></span>
-												<a class="text-dark-75 text-hover-primary px-2">이메일 저장</a>
-											</label>
-											
-											<div class="my-5">
-												<button class="btn btn-primary btn-block font-weight-bold btn-lg" type="button" onclick="location.href='pages/center/qna.html'">로그인</button>
-											</div>
-										</form>
+<!--begin::Body-->
+
+<body>
+	<!-- begin::로그인박스 -->
+	<div class="content d-flex flex-column flex-column-fluid justify-content-center">
+		<div class="container align-self-center">
+			<div class="row justify-content-center">
+				<div class="col-12" style="max-width:500px">
+					<h1 class="text-primary text-center my-5 mt-sm-2 display-3"><strong>ADMIN</strong></h1>
+					<div class="card">
+						<div class="card-body">
+							<div class="px-3">
+								<form method="POST" action="" role="form">
+									<input name="_token" type="hidden" value="">
+									<div class="form-group input-group-lg mb-5">
+										<label for="username">이메일</label>
+										<input type="text" class="form-control" name="username" id="username"
+											required="" placeholder="이메일을 입력하세요."
+											data-parsley-error-message="이메일을 입력하세요.">
 									</div>
-		
-								</div>
+									<div class="form-group input-group-lg mb-2">
+										<label for="userpassword">비밀번호</label>
+										<input type="password" class="form-control" name="password" id="userpassword"
+											required="" placeholder="비밀번호를 입력하세요."
+											data-parsley-error-message="비밀번호를 입력하세요.">
+									</div>
+									<label class="checkbox checkbox-inline">
+										<input type="checkbox">
+										<span></span>
+										<a class="text-dark-75 text-hover-primary px-2">이메일 저장</a>
+									</label>
+
+									<div class="my-5">
+										<button class="btn btn-primary btn-block font-weight-bold btn-lg" type="button"
+											onclick="location.href='pages/center/qna.html'">로그인</button>
+									</div>
+								</form>
 							</div>
-							<div class="mt-5 text-center">
-								<p class="text-muted font-size-lg">© 1gram company all right reserved 2020.​</p>
-							    <img src="assets/media/logos/logo-gray.svg" alt="1gram-logo" class="w-60px" style="fill: #ddd;">
-							</div>
+
 						</div>
 					</div>
+					<div class="mt-5 text-center">
+						<p class="text-muted font-size-lg">© 1gram company all right reserved 2020.​</p>
+						<img src="assets/media/logos/logo-gray.svg" alt="1gram-logo" class="w-60px" style="fill: #ddd;">
+					</div>
 				</div>
+			</div>
 		</div>
-		<!-- end::로그인박스 -->
-		
-		<!--begin::G"./assetsheme Bundle(used by all pages)-->
-		<script src="./assets/plugins/global/plugins.bundle.js"></script>
-		<script src="./assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
-		<script src="./assets/js/scripts.bundle.js"></script>
-		<!--end::Global Theme Bundle-->
-		<!--begin::P"./assetsipts(used by this page)-->
-		<script src="./assets/js/pages/custom/inbox/inbox.js"></script>
-		<!--end::Page Scripts-->
-	</body>
-	<!--end::Body-->
+	</div>
+	<!-- end::로그인박스 -->
+
+	<!--begin::G"./assetsheme Bundle(used by all pages)-->
+	<script src="./assets/plugins/global/plugins.bundle.js"></script>
+	<script src="./assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+	<script src="./assets/js/scripts.bundle.js"></script>
+	<!--end::Global Theme Bundle-->
+	<!--begin::P"./assetsipts(used by this page)-->
+	<script src="./assets/js/pages/custom/inbox/inbox.js"></script>
+	<!--end::Page Scripts-->
+</body>
+<!--end::Body-->
+
 </html>
