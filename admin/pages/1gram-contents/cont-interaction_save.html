@@ -115,7 +115,7 @@
 
                         <!--begin::Menu Nav-->
                         <ul class="menu-nav pt-0">
-                            <li class="menu-item" aria-haspopup="true" data-menu-toggle="hover">
+                            <li class="menu-item menu-item-active" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="../1gram-contents/cont-list.html" class="menu-link">
                                     <span class="svg-icon menu-icon svg-icon-white">
                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -556,7 +556,7 @@
                                 <!--begin::Page Heading-->
                                 <div class="d-flex align-items-baseline flex-wrap justify-content-between w-100">
                                     <!--begin::Page Title-->
-                                    <h5 class="text-dark font-weight-bold my-1 mr-5">제휴문의</h5>
+                                    <h5 class="text-dark font-weight-bold my-1 mr-5">1gram 콘텐츠</h5>
                                     <!--end::Page Title-->
                                     <!--begin::Breadcrumb-->
                                     <ul
@@ -565,10 +565,10 @@
                                             <a href="" class="text-muted"><i class="fas fa-home"></i></a>
                                         </li>
                                         <li class="breadcrumb-item text-muted">
-                                            <a href="" class="text-muted">운영관리</a>
+                                            <a href="" class="text-muted">1gram 콘텐츠</a>
                                         </li>
                                         <li class="breadcrumb-item text-muted">
-                                            <a href="" class="text-muted">제휴문의</a>
+                                            <a href="" class="text-muted">등록</a>
                                         </li>
                                     </ul>
                                     <!--end::Breadcrumb-->
@@ -586,83 +586,179 @@
                             <!--begin::Inbox-->
                             <div class="d-flex flex-row">
                                 <!--begin::List-->
-                                <div class="flex-row-fluid">
+                                <div class="flex-row-fluid d-block">
                                     <!--begin::Card-->
-                                    <div class="card card-custom card-stretch">
-
-                                        <!--begin::Body-->
+                                    <div class="card card-custom gutter-b">
+                                        <!-- begin:배포 내용 -->
                                         <div class="card-body">
-                                            <form class="form">
-                                                <!--begin::Group-->
-                                                <div class="form-group row">
-                                                    <label
-                                                        class="col-form-label col-2 text-lg-right text-left">제목</label>
-                                                    <div class="col-10">
-                                                        <input class="form-control" type="text" placeholder="제목을 입력하세요."
-                                                            value="000학원입니다..">
+                                            <!-- begin:사용여부 -->
+                                            <div class="form-group row fv-plugins-icon-container">
+                                                <label for="example-text-input"
+                                                    class="col-md-2 col-form-label font-weight-bold">사용여부</label>
+                                                <div class="col-md-10">
+                                                    <div class="radio-inline col-form-label">
+                                                        <label class="radio">
+                                                            <input type="radio" checked="checked" name="radios3">
+                                                            <span></span>사용 중</label>
+                                                        <label class="radio">
+                                                            <input type="radio" checked="checked" name="radios3">
+                                                            <span></span>만료</label>
                                                     </div>
                                                 </div>
-                                                <!--end::Group-->
-                                                <!--begin::Group-->
-                                                <div class="form-group row">
-                                                    <label
-                                                        class="col-form-label col-md-2 text-lg-right text-left">작성자</label>
-                                                    <div class="col-md-4">
-                                                        <input type="text" class="form-control" value="이상호" disabled="">
-                                                    </div>
-                                                    <label
-                                                        class="col-form-label col-md-2 text-lg-right text-left">회원정보</label>
-                                                    <div class="col-md-4">
-                                                        <input type="text" class="form-control"
-                                                            value="antshin72@gmail.com" disabled="">
+                                            </div>
+                                            <!-- begin:카테고리 -->
+                                            <div class="form-group row fv-plugins-icon-container">
+                                                <label for="example-text-input"
+                                                    class="col-md-2 col-form-label font-weight-bold">카테고리</label>
+                                                <div class="col-md-10">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepand">
+                                                            <select class="form-control mr-2" name="select"
+                                                                tabindex="null" style="width:200px;">
+                                                                <option>과목</option>
+                                                                <option>국어</option>
+                                                                <option>영어</option>
+                                                                <option>사회/역사/도덕</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <input id="categoryKeyword" class="form-control tagify"
+                                                            name='categoryKeyword' placeholder="키워드를 입력해주세요."
+                                                            value="키워드1,키워드2,키워드3" />
                                                     </div>
                                                 </div>
-                                                <!--end::Group-->
-                                                <!--begin::Group-->
+                                            </div>
+                                            <!-- begin:수업명 -->
+                                            <div class="form-group row fv-plugins-icon-container">
+                                                <label for="example-text-input"
+                                                    class="col-md-2 col-form-label font-weight-bold">제목</label>
+                                                <div class="col-md-10">
+                                                    <input class="form-control form-control-lg is-invalid" type="text"
+                                                        id="title" name="title" placeholder="강의명을 입력하세요." required=""
+                                                        value="먹물 무기를 가진 문어ㅣ바다생물 자연 관찰 학습">
+                                                </div>
+                                            </div>
+                                            <!-- begin:수업소개 -->
+                                            <div class="form-group row">
+                                                <label for="example-text-input"
+                                                    class="col-md-2 col-form-label font-weight-bold">설명</label>
+                                                <div class="col-md-10">
+                                                    <textarea class="form-control form-control-lg" rows="3" required=""
+                                                        placeholder="강의 설명을 입력하세요."
+                                                        value="바다 생물인 문어에 대한 관찰 학습 수업입니다."></textarea>
+                                                </div>
+                                            </div>
+                                            <!-- begin:영상내용 -->
+                                            <div class="inter_movie_box">
                                                 <div class="form-group row">
-                                                    <label
-                                                        class="col-form-label col-2 text-lg-right text-left">비밀번호</label>
-                                                    <div class="col-md-4">
-                                                        <div class="input-group">
-                                                            <input type="password" class="form-control" value="1234">
-                                                            <div class="input-group-append">
-                                                                <button class="btn btn-light-primary">비밀번호
-                                                                    초기화</button>
+                                                    <label for="example-text-input"
+                                                        class="col-md-2 col-form-label font-weight-bold">영상</label>
+                                                    <div class="col-md-10">
+
+                                                        <div class="video-container">
+                                                            <iframe src="http://new.1gram.cc/bubble/embed/380"
+                                                                frameborder="0" allowfullscreen="allowfullscreen"
+                                                                iframe_uuid="ef74c8d6-cf78-4dc1-ae80-1db87955b7e0"></iframe>
+                                                        </div>
+                                                        <button
+                                                            class="btn btn-danger font-weight-bold btn-block btn-lg">인터랙션
+                                                            수정</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <label for="example-text-input"
+                                                        class="col-md-2 col-form-label font-weight-bold">설명</label>
+                                                    <div class="col-md-10">
+                                                        <textarea class="form-control form-control-lg" rows="4"
+                                                            name="movie_desc" inline-data="true"
+                                                            placeholder="동영상 설명을 입력하세요." required=""
+                                                            data-parsley-required-message="동영상 설명을 입력하세요."></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- begin:대표이미지 등록 -->
+                                            <div class="form-group row fv-plugins-icon-container">
+                                                <label for="example-text-input"
+                                                    class="col-md-2 col-form-label font-weight-bold">대표이미지
+                                                    등록</label>
+                                                <div class="col-lg-9 col-xl-6">
+                                                    <div class="image-input image-input-changed symbol symbol-100 symbol-2by3"
+                                                        id="kt_image_2">
+                                                        <div class="image-input-wrapper symbol-label"
+                                                            style="background-image: url(./../../assets/media/1gram-img/default-image.png)">
+                                                        </div>
+                                                        <label
+                                                            class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+                                                            data-action="change" data-toggle="tooltip" title=""
+                                                            data-original-title="이미지 바꾸기">
+                                                            <i class="fa fa-pen icon-sm text-muted"></i>
+                                                            <input type="file" name="profile_avatar"
+                                                                accept=".png, .jpg, .jpeg">
+                                                            <input type="hidden" name="profile_avatar_remove">
+                                                        </label>
+                                                        <span
+                                                            class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+                                                            data-action="cancel" data-toggle="tooltip" title=""
+                                                            data-original-title="이미지 삭제">
+                                                            <i class="ki ki-bold-close icon-xs text-muted"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- begin:수업기간 -->
+                                            <div class="form-group row fv-plugins-icon-container">
+                                                <label for="example-text-input"
+                                                    class="col-md-2 col-form-label font-weight-bold">수업기간</label>
+                                                <div class="col-xl-10 col-12">
+                                                    <div class="input-daterange" id="dateRange_1">
+                                                        <div class="start-date float-left">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control form-control-lg"
+                                                                    name="start" placeholder="yyyy/mm/dd"
+                                                                    value="2021/03/11">
+                                                                <div class="input-group-append">
+                                                                    <span class="input-group-text border">
+                                                                        <i class="la la-calendar-check-o"></i>
+                                                                    </span>
+                                                                </div>
                                                             </div>
+                                                            <div class="invalid-feedback">수업명을 입력해 주세요.</div>
+                                                        </div>
+                                                        <div class="input-group-append float-left">
+                                                            <span class="input-group-text bg-white border-0">
+                                                                ~
+                                                            </span>
+                                                        </div>
+                                                        <div class="end-date float-left">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control form-control-lg"
+                                                                    name="end" placeholder="yyyy/mm/dd"
+                                                                    value="2021/03/14">
+                                                                <div class="input-group-append">
+                                                                    <span class="input-group-text border">
+                                                                        <i class="la la-calendar-check-o"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="invalid-feedback">수업명을 입력해 주세요.</div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!--end::Group-->
-                                                <!--begin::Group-->
-                                                <div class="form-group row">
-                                                    <label
-                                                        class="col-form-label col-md-2 text-lg-right text-left">내용</label>
-                                                    <div class="col-md-10">
-                                                        <textarea rows="15" class="form-control"
-                                                            placeholder="내용을 입력하세요.">서비스 론칭 기념 이벤트입니다.
-000학원입니다.
+                                            </div>
+                                            <!-- begin:수업기간 -->
 
-000학원에 적합하여 제휴문의로 연락드립니다.
 
-이름: 이상호
-번호 : 10-000-000
-이메일 :thqo1999@naver.com
-이쪽으로 연락주시면 감사하겠습니다.
-</textarea>
-                                                    </div>
-                                                </div>
-                                                <!--end::Group-->
-                                            </form>
                                         </div>
-                                        <!--end::Body-->
-                                        <!--begin::버튼 -->
+                                        <!-- end::배포 내용 -->
                                         <div class="card-footer d-flex justify-content-center mt-4">
                                             <button type="reset"
                                                 class="btn btn-secondary rounded font-weight-bold btn-lg px-6">취소</button>
-                                            <a href="partner.html" type="button"
-                                                class="btn btn-info rounded ml-2 font-weight-bold btn-lg px-6">수정</a>
+                                            <a href="#" type="button"
+                                                class="btn btn-primary rounded ml-2 font-weight-bold btn-lg px-6">저장</a>
+                                            <button type="button" data-toggle="modal" data-target="#contPreview"
+                                                class="btn btn-outline-primary rounded ml-2 font-weight-bold btn-lg px-6">미리보기</button>
                                         </div>
-                                        <!--end::버튼 -->
                                     </div>
                                     <!--end::Card-->
                                 </div>
@@ -700,42 +796,41 @@
         <!--end::Page-->
     </div>
     <!--end::Main-->
-    <!-- begin:: 설정 모달창 -->
-    <div class="modal fade bg-dark-o-50" id="boardCategoryModal" tabindex="-1" aria-labelledby="boardCategory"
-        aria-modal="true" role="dialog">
-        <div class="modal-dialog modal-dialog-centered px-5" role="document" style="width:350px">
+    <!-- begin:: 미리보기 모달창 -->
+    <div class="modal fade bg-dark-o-50" id="contPreview" tabindex="-1" aria-labelledby="contPreview" aria-modal="true"
+        role="dialog">
+        <div class="modal-lg modal-dialog modal-dialog-centered px-5" role="document">
             <div class="modal-content overflow-hidden">
-                <div class="modal-body py-5">
+                <div class="modal-body py-10">
                     <div class="row">
                         <div class="col-12">
-                            <label class="font-weight-bold">유형</label>
-                            <ul class="board-category-list">
-                                <li class="on"><input class="form-control form-control-solid" value="수업 저작 및 배포"
-                                        disabled></li>
-                                <li><input class="form-control form-control-solid" value="학생관리" disabled></li>
-                                <li><input class="form-control form-control-solid" value="가입, 비밀번호 변경" disabled></li>
-                                <li><input class="form-control form-control-solid" value="회원 정보관리" disabled></li>
-                                <li><input class="form-control form-control-solid" value="학습분석" disabled></li>
-                            </ul>
-                            <div class="d-flex w-100 justify-content-center">
-                                <button class="btn btn-outline-secondary btn-sm mr-2 rounded-0"><i
-                                        class="la la-minus-circle"></i>삭제</button>
-                                <button class="btn btn-outline-secondary btn-sm mr-15 rounded-0"><i
-                                        class="la la-plus-circle"></i>추가</button>
-                                <button class="btn btn-outline-secondary btn-sm rounded-0">이름바꾸기</button>
+                            <h5 class="font-weight-bold mb-4">먹물 무기를 가진 문어ㅣ바다생물 자연 관찰 학습
+                            </h5>
+                            <div class="interactive-video">
+                                <div class="vdo-container">
+                                    <iframe src="https://www.1gram.cc/bubble/embed/1396" style="width:100%;"
+                                        frameborder=”0″ marginwidth=”0″ marginheight=”0″ scrolling=””></iframe>
+                                </div>
+                            </div>
+                            <div class="d-flex w-100 flex-wrap cont-keyword mt-3">
+                                <span class="badge badge-secondary my-1 mr-1">과학</span>
+                                <span class="badge badge-secondary m-1">키워드1</span>
+                                <span class="badge badge-secondary m-1">키워드2</span>
+                            </div>
+                            <div class="mt-5 cont-desc">
+                                바다 생물인 문어에 대한 관찰 학습 수업입니다.
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer text-center py-2">
                     <a href="#" class="btn btn-secondary font-weight-bold" data-dismiss="modal"
-                        aria-label="Close">취소</a>
-                    <a href="#" class="btn btn-primary font-weight-bold">확인</a>
+                        aria-label="Close">닫기</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end:: 설정 모달창 -->
+    <!-- end:: 미리보기 모달창 -->
 
     <!--begin::G"./assetsheme Bundle(used by all pages)-->
     <script src="../../assets/plugins/global/plugins.bundle.js"></script>
@@ -745,6 +840,32 @@
     <!--begin::P"./assetsipts(used by this page)-->
     <script src="../../assets/js/pages/admin-script.js"></script>
     <!--end::Page Scripts-->
+
+    <script>
+        // tagging support
+        var input = document.getElementById('categoryKeyword');
+        tagify = new Tagify(input)
+        // range picker
+        var arrows;
+        if (KTUtil.isRTL()) {
+            arrows = {
+                leftArrow: '<i class="la la-angle-right"></i>',
+                rightArrow: '<i class="la la-angle-left"></i>'
+            }
+        } else {
+            arrows = {
+                leftArrow: '<i class="la la-angle-left"></i>',
+                rightArrow: '<i class="la la-angle-right"></i>'
+            }
+        }
+        $('#dateRange_1').datepicker({
+            rtl: KTUtil.isRTL(),
+            todayHighlight: true,
+            templates: arrows,
+            format: "yyyy/mm/dd",
+            language: "kr"
+        });
+    </script>
 </body>
 <!--end::Body-->
 
