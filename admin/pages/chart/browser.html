@@ -111,7 +111,7 @@
 
 						<!--begin::Menu Nav-->
 						<ul class="menu-nav pt-0">
-							<li class="menu-item menu-item-active" aria-haspopup="true" data-menu-toggle="hover">
+							<li class="menu-item" aria-haspopup="true" data-menu-toggle="hover">
 								<a href="../1gram-contents/cont-list.html" class="menu-link">
 									<span class="svg-icon menu-icon svg-icon-white">
 										<svg xmlns="http://www.w3.org/2000/svg"
@@ -432,7 +432,7 @@
 									</ul>
 								</div>
 							</li>
-							<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+							<li class="menu-item menu-item-submenu menu-item-open" aria-haspopup="true" data-menu-toggle="hover">
 								<a href="javascript:;" class="menu-link menu-toggle">
 									<span class="svg-icon menu-icon svg-icon-white">
 										<svg xmlns="http://www.w3.org/2000/svg"
@@ -465,12 +465,12 @@
 												<span class="menu-text">접속자 분석</span>
 											</a>
 										</li>
-										<li class="menu-item" aria-haspopup="true">
+										<li class="menu-item menu-item-active" aria-haspopup="true">
 											<a href="../chart/browser.html" class="menu-link">
 												<i class="menu-bullet menu-bullet-line">
 													<span></span>
 												</i>
-												<span class="menu-text">OS/브라우저분석​리</span>
+												<span class="menu-text">디바이스분석</span>
 											</a>
 										</li>
 									</ul>
@@ -593,7 +593,7 @@
 								<!--begin::Page Heading-->
 								<div class="d-flex align-items-baseline flex-wrap justify-content-between w-100">
 									<!--begin::Page Title-->
-									<h5 class="text-dark font-weight-bold my-1 mr-5">접속자 분석</h5>
+									<h5 class="text-dark font-weight-bold my-1 mr-5">디바이스 분석</h5>
 									<!--end::Page Title-->
 									<!--begin::Breadcrumb-->
 									<ul
@@ -605,7 +605,7 @@
 											<a href="" class="text-muted">접속통계</a>
 										</li>
 										<li class="breadcrumb-item text-muted">
-											<a href="" class="text-muted">접속자 분석</a>
+											<a href="" class="text-muted">디바이스 분석</a>
 										</li>
 									</ul>
 									<!--end::Breadcrumb-->
@@ -696,31 +696,61 @@
 										<!--end::Header-->
 										<!--begin::Body-->
 										<div class="card-body overflow-auto">
-											<div id="userChart_01"></div>
-											<table class="table table-bordered mt-5">
+											<div id="userChart"></div>
+											<table class="table table-bordered mt-5 text-center
 												<colgroup>
-													<col width="22%">
 													<col>
-													<col width="22%">
-													<col>
+													<col width="25%">
+													<col width="25%">
+													<col width="25%">
 												</colgroup>
-												<tr>
-													<td class="bg-secondary-o-30">총 접속자 수</td>
-													<td><b>970</b>명</td>
-													<td class="bg-secondary-o-30">평균 접속자 수</td>
-													<td><b>970</b>명</td>
+												<tr class="bg-secondary-o-30">
+													<td></td>
+													<td>가입자 수</td>
+													<td>강의등록</td>
+													<td>학생학습</td>
 												</tr>
 												<tr>
-													<td class="bg-secondary-o-30">오늘 접속자 수</td>
-													<td><b>3</b>명</td>
-													<td class="bg-secondary-o-30">어제 접속자 수</td>
-													<td><b>8</b>명</td>
+													<td class="bg-secondary-o-30">2021/8/1</td>
+													<td><b>50</b></td>
+													<td><b>50</b></td>
+													<td><b>10</b></td>
 												</tr>
 												<tr>
-													<td class="bg-secondary-o-30">이번달 접속자 수</td>
-													<td><b>2217</b>명</td>
-													<td class="bg-secondary-o-30">이번달 평균 접속자 수</td>
-													<td><b>270</b>명</td>
+													<td class="bg-secondary-o-30">2021/8/2</td>
+													<td><b>50</b></td>
+													<td><b>50</b></td>
+													<td><b>10</b></td>
+												</tr>
+												<tr>
+													<td class="bg-secondary-o-30">2021/8/3</td>
+													<td><b>50</b></td>
+													<td><b>50</b></td>
+													<td><b>10</b></td>
+												</tr>
+												<tr>
+													<td class="bg-secondary-o-30">2021/8/4</td>
+													<td><b>50</b></td>
+													<td><b>50</b></td>
+													<td><b>10</b></td>
+												</tr>
+												<tr>
+													<td class="bg-secondary-o-30">2021/8/5</td>
+													<td><b>50</b></td>
+													<td><b>50</b></td>
+													<td><b>10</b></td>
+												</tr>
+												<tr>
+													<td class="bg-secondary-o-30">2021/8/6</td>
+													<td><b>50</b></td>
+													<td><b>50</b></td>
+													<td><b>10</b></td>
+												</tr>
+												<tr>
+													<td class="bg-secondary-o-30">2021/8/7</td>
+													<td><b>50</b></td>
+													<td><b>50</b></td>
+													<td><b>10</b></td>
 												</tr>
 											</table>
 										</div>
@@ -769,10 +799,65 @@
 	<script src="../../assets/js/scripts.bundle.js"></script>
 	<!--end::Global Theme Bundle-->
 	<!--begin::P"./assetsipts(used by this page)-->
-	<script src="../../assets/js/pages/features/charts/apexcharts.js"></script>
 	<script src="../../assets/js/pages/features/forms/widgets/bootstrap-datepicker.js"></script>
 	<script src="../../assets/js/pages/admin-script.js"></script>
 	<!--end::Page Scripts-->
+	<!-- chart 스크립트 -->
+	<script>
+		var options = {
+          series: [{
+          name: '가입자수',
+          data: [44, 55, 41, 67, 22, 43,50]
+        }, {
+          name: '강의등록',
+          data: [13, 23, 20, 8, 13, 27,50]
+        }, {
+          name: '학생학습',
+          data: [11, 17, 15, 15, 21, 14,100]
+        },],
+          chart: {
+          type: 'bar',
+          height: 350,
+          stacked: true,
+          toolbar: {
+            show: true
+          },
+          zoom: {
+            enabled: true
+          }
+        },
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            legend: {
+              position: 'bottom',
+              offsetX: -10,
+              offsetY: 0
+            }
+          }
+        }],
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            borderRadius: 10
+          },
+        },
+        xaxis: {
+          type: 'text',
+          categories: ['2021/8/1','2021/8/2','2021/8/3','2021/8/4','2021/8/5','2021/8/6','2021/8/7',
+          ],
+        },
+        legend: {
+          position: 'bottom',
+        },
+        fill: {
+          opacity: 1
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#userChart"), options);
+        chart.render();
+	</script>
 </body>
 <!--end::Body-->
 

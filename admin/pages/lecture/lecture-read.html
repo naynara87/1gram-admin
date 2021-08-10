@@ -474,7 +474,7 @@
 												<i class="menu-bullet menu-bullet-line">
 													<span></span>
 												</i>
-												<span class="menu-text">OS/브라우저분석​리</span>
+												<span class="menu-text">디바이스 분석</span>
 											</a>
 										</li>
 									</ul>
@@ -597,7 +597,7 @@
                                 <!--begin::Page Heading-->
                                 <div class="d-flex align-items-baseline flex-wrap justify-content-between w-100">
                                     <!--begin::Page Title-->
-                                    <h5 class="text-dark font-weight-bold my-1 mr-5">1gram 콘텐츠</h5>
+                                    <h5 class="text-dark font-weight-bold my-1 mr-5">강의관리</h5>
                                     <!--end::Page Title-->
                                     <!--begin::Breadcrumb-->
                                     <ul
@@ -606,10 +606,10 @@
                                             <a href="" class="text-muted"><i class="fas fa-home"></i></a>
                                         </li>
                                         <li class="breadcrumb-item text-muted">
-                                            <a href="" class="text-muted">1gram 콘텐츠</a>
+                                            <a href="" class="text-muted">강의관리</a>
                                         </li>
                                         <li class="breadcrumb-item text-muted">
-                                            <a href="" class="text-muted">등록</a>
+                                            <a href="" class="text-muted">상세</a>
                                         </li>
                                     </ul>
                                     <!--end::Breadcrumb-->
@@ -632,61 +632,60 @@
                                     <div class="card card-custom gutter-b">
                                         <!-- begin:배포 내용 -->
                                         <div class="card-body">
-                                            <!-- begin:사용여부 -->
+                                            <!-- begin:등록 -->
                                             <div class="form-group row fv-plugins-icon-container">
                                                 <label for="example-text-input"
-                                                    class="col-md-2 col-form-label font-weight-bold">사용여부</label>
-                                                <div class="col-md-10">
-                                                    <div class="radio-inline col-form-label">
-                                                        <label class="radio">
-                                                            <input type="radio" checked="checked" name="radios3">
-                                                            <span></span>사용 중</label>
-                                                        <label class="radio">
-                                                            <input type="radio" checked="checked" name="radios3">
-                                                            <span></span>만료</label>
-                                                    </div>
+                                                    class="col-md-2 col-form-label font-weight-bold text-lg-right">등록자</label>
+                                                <div class="col-md-4">
+                                                    <input class="form-control form-control-lg" type="text"
+                                                       placeholder="강의명을 입력하세요." required="" value="홍길동" disabled>
+                                                </div>
+                                                <label for="example-text-input"
+                                                    class="col-md-2 col-form-label font-weight-bold text-lg-right">등록일</label>
+                                                <div class="col-md-4">
+                                                    <input class="form-control form-control-lg" type="text"
+                                                       placeholder="강의명을 입력하세요." required="" value="2021-05-01" disabled>
                                                 </div>
                                             </div>
-                                            <!-- begin:카테고리 -->
-                                            <div class="form-group row fv-plugins-icon-container">
+                                             <!-- begin:시청자/수정일 -->
+                                             <div class="form-group row fv-plugins-icon-container">
                                                 <label for="example-text-input"
-                                                    class="col-md-2 col-form-label font-weight-bold">카테고리</label>
-                                                <div class="col-md-10">
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepand">
-                                                            <select class="form-control mr-2" name="select"
-                                                                tabindex="null"
-                                                                style="width:200px; background: url('../../assets/media/1gram-img/select.svg') no-repeat top 10px right 10px; background-size:14px;">
-                                                                <option>과목</option>
-                                                                <option>국어</option>
-                                                                <option>영어</option>
-                                                                <option>사회/역사/도덕</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <input id="categoryKeyword" class="form-control tagify"
-                                                            name='categoryKeyword' placeholder="키워드를 입력해주세요."
-                                                            value="키워드1,키워드2,키워드3" />
-                                                    </div>
+                                                    class="col-md-2 col-form-label font-weight-bold text-lg-right">시청자</label>
+                                                <div class="col-md-4">
+                                                    <a href="./viewer.html" class="btn btn-info" data-lity>시청자확인</a>
+                                                </div>
+                                                <label for="example-text-input"
+                                                    class="col-md-2 col-form-label font-weight-bold text-lg-right">수정일</label>
+                                                <div class="col-md-4">
+                                                    <input class="form-control form-control-lg" type="text"
+                                                       placeholder="강의명을 입력하세요." required="" value="2021-05-04" disabled>
                                                 </div>
                                             </div>
                                             <!-- begin:수업명 -->
                                             <div class="form-group row fv-plugins-icon-container">
                                                 <label for="example-text-input"
-                                                    class="col-md-2 col-form-label font-weight-bold">제목</label>
+                                                    class="col-md-2 col-form-label font-weight-bold text-lg-right">수업명</label>
                                                 <div class="col-md-10">
-                                                    <input class="form-control form-control-lg is-invalid" type="text"
-                                                        id="title" name="title" placeholder="강의명을 입력하세요." required="">
-                                                    <div class="invalid-feedback">강의명을 입력해 주세요.</div>
+                                                    <input class="form-control form-control-lg is-invalid" type="text" placeholder="강의명을 입력하세요." required="">
                                                 </div>
                                             </div>
                                             <!-- begin:수업소개 -->
                                             <div class="form-group row">
                                                 <label for="example-text-input"
-                                                    class="col-md-2 col-form-label font-weight-bold">설명</label>
+                                                    class="col-md-2 col-form-label font-weight-bold text-lg-right">설명</label>
                                                 <div class="col-md-10">
                                                     <textarea class="form-control form-control-lg" rows="3" required=""
                                                         placeholder="강의 설명을 입력하세요."></textarea>
+                                                </div>
+                                            </div>
+                                            <!-- begin:제목 -->
+                                            <div class="form-group row fv-plugins-icon-container">
+                                                <label for="example-text-input"
+                                                    class="col-md-2 col-form-label font-weight-bold text-lg-right">제목</label>
+                                                <div class="col-md-10">
+                                                    <input class="form-control form-control-lg is-invalid text-lg-right" type="text"
+                                                        id="title" name="title" placeholder="강의명을 입력하세요." required="">
+                                                    <div class="invalid-feedback">강의명을 입력해 주세요.</div>
                                                 </div>
                                             </div>
                                             <!-- begin:영상내용 -->
@@ -694,7 +693,7 @@
 
                                                 <div class="form-group row">
                                                     <label for="example-text-input"
-                                                        class="col-md-2 col-form-label font-weight-bold">영상</label>
+                                                        class="col-md-2 col-form-label font-weight-bold text-lg-right">영상</label>
                                                     <div class="col-md-10">
 
                                                         <div class="video-container">
@@ -703,14 +702,14 @@
                                                                 iframe_uuid="ef74c8d6-cf78-4dc1-ae80-1db87955b7e0"></iframe>
                                                         </div>
                                                         <button
-                                                            class="btn btn-danger font-weight-bold btn-block btn-lg">인터랙션
+                                                            class="btn btn-danger font-weight-bold btn-block btn-lg mt-3">인터랙션
                                                             수정</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group row">
                                                     <label for="example-text-input"
-                                                        class="col-md-2 col-form-label font-weight-bold">설명</label>
+                                                        class="col-md-2 col-form-label font-weight-bold text-lg-right">설명</label>
                                                     <div class="col-md-10">
                                                         <textarea class="form-control form-control-lg" rows="4"
                                                             name="movie_desc" inline-data="true"
@@ -722,9 +721,9 @@
                                             <!-- begin:대표이미지 등록 -->
                                             <div class="form-group row fv-plugins-icon-container">
                                                 <label for="example-text-input"
-                                                    class="col-md-2 col-form-label font-weight-bold">대표이미지
+                                                    class="col-md-2 col-form-label font-weight-bold text-lg-right">대표이미지
                                                     등록</label>
-                                                <div class="col-lg-9 col-xl-6">
+                                                <div class="col-md-10">
                                                     <div class="image-input image-input-changed symbol symbol-100 symbol-2by3"
                                                         id="kt_image_2">
                                                         <div class="image-input-wrapper symbol-label"
@@ -751,8 +750,8 @@
                                             <!-- begin:수업기간 -->
                                             <div class="form-group row fv-plugins-icon-container">
                                                 <label for="example-text-input"
-                                                    class="col-md-2 col-form-label font-weight-bold">수업기간</label>
-                                                <div class="col-xl-10 col-12">
+                                                    class="col-md-2 col-form-label font-weight-bold text-lg-right">수업기간</label>
+                                                <div class="col-md-10">
                                                     <div class="input-daterange" id="dateRange_1">
                                                         <div class="start-date float-left">
                                                             <div class="input-group">
@@ -876,33 +875,10 @@
     <!--end::Global Theme Bundle-->
     <!--begin::P"./assetsipts(used by this page)-->
     <script src="../../assets/js/pages/admin-script.js"></script>
+	<script src="../../assets/js/pages/lity.js"></script>
+
     <!--end::Page Scripts-->
 
-    <script>
-        // tagging support
-        var input = document.getElementById('categoryKeyword');
-        tagify = new Tagify(input)
-        // range picker
-        var arrows;
-        if (KTUtil.isRTL()) {
-            arrows = {
-                leftArrow: '<i class="la la-angle-right"></i>',
-                rightArrow: '<i class="la la-angle-left"></i>'
-            }
-        } else {
-            arrows = {
-                leftArrow: '<i class="la la-angle-left"></i>',
-                rightArrow: '<i class="la la-angle-right"></i>'
-            }
-        }
-        $('#dateRange_1').datepicker({
-            rtl: KTUtil.isRTL(),
-            todayHighlight: true,
-            templates: arrows,
-            format: "yyyy/mm/dd",
-            language: "kr"
-        });
-    </script>
 
 </body>
 <!--end::Body-->

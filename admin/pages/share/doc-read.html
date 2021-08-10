@@ -470,7 +470,7 @@
 												<i class="menu-bullet menu-bullet-line">
 													<span></span>
 												</i>
-												<span class="menu-text">OS/브라우저분석​리</span>
+												<span class="menu-text">디바이스 분석</span>
 											</a>
 										</li>
 									</ul>
@@ -605,7 +605,7 @@
 											<a href="" class="text-muted">나눔공간 관리</a>
 										</li>
 										<li class="breadcrumb-item text-muted">
-											<a href="" class="text-muted">강의나눔</a>
+											<a href="" class="text-muted">자료나눔</a>
 										</li>
 									</ul>
 									<!--end::Breadcrumb-->
@@ -632,19 +632,27 @@
 												<!--begin::Group-->
 												<div class="form-group row">
 													<label
-														class="col-form-label col-2 text-lg-right text-left">제목</label>
-													<div class="col-10">
+														class="col-form-label col-md-2 text-lg-right text-left">제목</label>
+													<div class="col-md-10">
 														<input class="form-control" type="text" placeholder="제목을 입력하세요."
-															value="내용입니다." disabled>
+															value="내용입니다.">
 													</div>
 												</div>
 												<!--end::Group-->
 												<!--begin::Group-->
 												<div class="form-group row">
 													<label
-														class="col-form-label col-2 text-lg-right text-left">강의</label>
-													<div class="col-10">
-														<div class="video-container">
+														class="col-form-label col-md-2 text-lg-right text-left">URL</label>
+													<div class="col-md-10">
+														<div class="input-group">
+															<input class="form-control" type="text"
+																placeholder="URL을 입력하세요.">
+															<div class="input-group-append">
+																<span
+																	class="input-group-text bg-dark text-white">불러오기</span>
+															</div>
+														</div>
+														<div class="video-container mt-3">
 															<iframe src="http://new.1gram.cc/bubble/embed/380"
 																frameborder="0" allowfullscreen="allowfullscreen"
 																iframe_uuid="ef74c8d6-cf78-4dc1-ae80-1db87955b7e0"></iframe>
@@ -655,18 +663,8 @@
 												<!--begin::Group-->
 												<div class="form-group row">
 													<label
-														class="col-form-label col-2 text-lg-right text-left">설명</label>
-													<div class="col-10">
-														<textarea rows="5" class="form-control" placeholder="내용을 입력하세요."
-															value="내용입니다." disabled></textarea>
-													</div>
-												</div>
-												<!--end::Group-->
-												<!--begin::Group-->
-												<div class="form-group row">
-													<label class="col-form-label col-2 text-lg-right text-left">대표이미지
-														등록</label>
-													<div class="col-10">
+														class="col-form-label col-md-2 text-lg-right text-left">대표이미지</label>
+													<div class="col-md-10">
 														<div class="image-input image-input-changed symbol symbol-100 symbol-2by3"
 															id="kt_image_3">
 															<div class="image-input-wrapper symbol-label"
@@ -679,39 +677,107 @@
 												<!--begin::Group-->
 												<div class="form-group row">
 													<label
-														class="col-form-label col-2 text-lg-right text-left">수업기간</label>
-													<div class="col-10">
-														<div class="input-daterange" id="kt_datepicker_5">
-															<div class="start-date float-left">
-																<div class="input-group">
-																	<input type="text"
-																		class="form-control form-control-lg"
-																		name="start" disabled placeholder="yyyy/mm/dd">
-																	<div class="input-group-append">
-																		<span class="input-group-text border">
-																			<i class="la la-calendar-check-o"></i>
-																		</span>
-																	</div>
-																</div>
-																<div class="invalid-feedback">수업명을 입력해 주세요.</div>
+														class="col-form-label col-md-2 text-lg-right text-left">학교급</label>
+													<div class="col-md-10">
+														<div class="col-form-label">
+															<div class="radio-inline">
+																<label class="radio">
+																	<input type="radio" name="radios1">
+																	<span></span>초등학교</label>
+																<label class="radio">
+																	<input type="radio" checked="checked"
+																		name="radios1">
+																	<span></span>중/고등학교</label>
+																<label class="radio">
+																	<input type="radio" name="radios1">
+																	<span></span>공통</label>
 															</div>
-															<div class="input-group-append float-left">
-																<span class="input-group-text bg-white border-0">
-																	~
-																</span>
+														</div>
+													</div>
+												</div>
+												<!--end::Group-->
+												<!--begin::Group-->
+												<div class="form-group row">
+													<label
+														class="col-form-label col-md-2 text-lg-right text-left">학년</label>
+													<div class="col-md-10">
+														<div class="col-form-label">
+															<div class="radio-inline">
+																<label class="radio">
+																	<input type="radio" name="radios2">
+																	<span></span>1학년</label>
+																<label class="radio">
+																	<input type="radio" checked="checked"
+																		name="radios2">
+																	<span></span>2학년</label>
+																<label class="radio">
+																	<input type="radio" name="radios2">
+																	<span></span>3학년</label>
+																<label class="radio">
+																	<input type="radio" name="radios2">
+																	<span></span>공통</label>
 															</div>
-															<div class="end-date float-left">
-																<div class="input-group">
-																	<input type="text"
-																		class="form-control form-control-lg" name="end"
-																		disabled placeholder="yyyy/mm/dd">
-																	<div class="input-group-append">
-																		<span class="input-group-text border">
-																			<i class="la la-calendar-check-o"></i>
-																		</span>
-																	</div>
-																</div>
-																<div class="invalid-feedback">수업명을 입력해 주세요.</div>
+														</div>
+													</div>
+												</div>
+												<!--end::Group-->
+												<!--begin::Group-->
+												<div class="form-group row">
+													<label
+														class="col-form-label col-md-2 text-lg-right text-left">학기</label>
+													<div class="col-md-10">
+														<div class="col-form-label">
+															<div class="radio-inline">
+																<label class="radio">
+																	<input type="radio" name="radios3">
+																	<span></span>1학기</label>
+																<label class="radio">
+																	<input type="radio" checked="checked"
+																		name="radios3">
+																	<span></span>2학기</label>
+																<label class="radio">
+																	<input type="radio" name="radios3">
+																	<span></span>공통</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--end::Group-->
+												<!--begin::Group-->
+												<div class="row">
+													<label
+														class="col-form-label col-md-2 text-lg-right text-left">과목</label>
+													<div class="col-md-10">
+														<div class="col-form-label">
+															<div class="radio-inline">
+																<label class="radio mb-2">
+																	<input type="radio" name="radios4">
+																	<span></span>국어</label>
+																<label class="radio mb-2">
+																	<input type="radio" checked="checked"
+																		name="radios4">
+																	<span></span>영어</label>
+																<label class="radio mb-2">
+																	<input type="radio" name="radios4">
+																	<span></span>수학</label>
+																<label class="radio mb-2">
+																	<input type="radio" name="radios4">
+																	<span></span>사회/도덕/역사</label>
+																<label class="radio mb-2">
+																	<input type="radio" name="radios4">
+																	<span></span>과학</label>
+																<label class="radio mb-2">
+																	<input type="radio" name="radios4">
+																	<span></span>예술</label>
+																<label class="radio mb-2">
+																	<input type="radio" name="radios4">
+																	<span></span>체육</label>
+																<label class="radio mb-2">
+																	<input type="radio" name="radios4">
+																	<span></span>기술/가정/제2외국어/한문/교양</label>
+																<label class="radio mb-2">
+																	<input type="radio" name="radios4">
+																	<span></span>기타</label>
 															</div>
 														</div>
 													</div>
@@ -724,8 +790,10 @@
 										<div class="card-footer d-flex justify-content-center mt-4">
 											<button type="reset"
 												class="btn btn-secondary rounded font-weight-bold btn-lg px-6">취소</button>
-											<a href="?pages=/footer-articles/support/inquire-read" type="button"
+											<a href="../share/document.html" type="button"
 												class="btn btn-primary rounded ml-2 font-weight-bold btn-lg px-6">저장</a>
+											<a href="../share/document.html" type="button"
+												class="btn btn-danger rounded ml-2 font-weight-bold btn-lg px-6">삭제</a>
 										</div>
 										<!--end::버튼 -->
 									</div>

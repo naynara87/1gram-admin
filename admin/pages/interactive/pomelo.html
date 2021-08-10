@@ -31,6 +31,7 @@
 
 	<!--end::Layout Themes-->
 	<link rel="shortcut icon" href="../../favicon.ico" />
+	<!-- slick -->
 </head>
 
 <!--end::Head-->
@@ -111,7 +112,7 @@
 
 						<!--begin::Menu Nav-->
 						<ul class="menu-nav pt-0">
-							<li class="menu-item menu-item-active" aria-haspopup="true" data-menu-toggle="hover">
+							<li class="menu-item" aria-haspopup="true" data-menu-toggle="hover">
 								<a href="../1gram-contents/cont-list.html" class="menu-link">
 									<span class="svg-icon menu-icon svg-icon-white">
 										<svg xmlns="http://www.w3.org/2000/svg"
@@ -390,7 +391,7 @@
 									</ul>
 								</div>
 							</li>
-							<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+							<li class="menu-item menu-item-submenu menu-item-open" aria-haspopup="true" data-menu-toggle="hover">
 								<a href="javascript:;" class="menu-link menu-toggle">
 									<span class="svg-icon menu-icon svg-icon-white"><svg
 											xmlns="http://www.w3.org/2000/svg"
@@ -413,7 +414,7 @@
 								<div class="menu-submenu">
 									<ul class="menu-subnav">
 
-										<li class="menu-item" aria-haspopup="true">
+										<li class="menu-item menu-item-active" aria-haspopup="true">
 											<a href="../interactive/pomelo.html" class="menu-link">
 												<i class="menu-bullet menu-bullet-line">
 													<span></span>
@@ -470,7 +471,7 @@
 												<i class="menu-bullet menu-bullet-line">
 													<span></span>
 												</i>
-												<span class="menu-text">OS/브라우저분석​리</span>
+												<span class="menu-text">디바이스 분석</span>
 											</a>
 										</li>
 									</ul>
@@ -725,18 +726,15 @@
 																	class="text-truncate">먹물 무기를 가진
 																	문어ㅣ바다생물 자연 관찰 학습</a></td>
 															<td>
-																<button
-																	class="btn btn-secondary px-5 font-weight-bold btn-sm btn_copy">URL​</button>
-																<button
-																	class="btn btn-dark px-5 font-weight-bold btn-sm ml-1 btn_copy">IFRAME</button>
+																<a href="#none"
+																	class="btn btn-secondary px-5 font-weight-bold btn-sm btn_copy">URL​</a>
+																<a href="#none"
+																	class="btn btn-dark px-5 font-weight-bold btn-sm ml-1 btn_copy">IFRAME</a>
 															</td>
 															<td>김소배 (bubble01)</td>
 															<td class="font-size-sm">2020-06-21</td>
 															<td>
-																<a href="https://www.youtube.com/watch?v=XSGBVzeBUbk"
-																	data-lity class="btn btn-default btn-icon btn-sm"
-																	data-toggle="tooltip" title=""
-																	data-original-title="미리보기">
+																<a href="#none"class="btn btn-default btn-icon btn-sm" data-toggle="modal" data-target="#preview01">
 																	<i class="la la-eye"></i>
 																</a>
 																<span class="btn btn-default btn-icon btn-sm"
@@ -755,18 +753,15 @@
 																	무기를 가진 문어ㅣ바다생물 자연
 																	관찰 학습</a></td>
 															<td>
-																<button
-																	class="btn btn-secondary px-5 font-weight-bold btn-sm btn_copy">URL​</button>
-																<button
-																	class="btn btn-dark px-5 font-weight-bold btn-sm ml-1 btn_copy">IFRAME</button>
+																<a href="#none"
+																	class="btn btn-secondary px-5 font-weight-bold btn-sm btn_copy">URL​</a>
+																<a href="#none"
+																	class="btn btn-dark px-5 font-weight-bold btn-sm ml-1 btn_copy">IFRAME</a>
 															</td>
 															<td>김소배 (bubble01)</td>
 															<td class="font-size-sm">2020-06-21</td>
 															<td>
-																<a href="#" data-lity
-																	class="btn btn-default btn-icon btn-sm"
-																	data-toggle="tooltip" title=""
-																	data-original-title="미리보기">
+																<a href="#none"class="btn btn-default btn-icon btn-sm" data-toggle="modal" data-target="#preview02">
 																	<i class="la la-eye"></i>
 																</a>
 																<span class="btn btn-default btn-icon btn-sm"
@@ -785,18 +780,15 @@
 																	무기를 가진 문어ㅣ바다생물 자연
 																	관찰 학습</a></td>
 															<td>
-																<button
-																	class="btn btn-secondary px-5 font-weight-bold btn-sm btn_copy">URL​</button>
-																<button
-																	class="btn btn-dark px-5 font-weight-bold btn-sm ml-1 btn_copy">IFRAME</button>
+																<a href="#none"
+																	class="btn btn-secondary px-5 font-weight-bold btn-sm btn_copy">URL​</a>
+																<a href="#none"
+																	class="btn btn-dark px-5 font-weight-bold btn-sm ml-1 btn_copy">IFRAME</a>
 															</td>
 															<td>김소배 (bubble01)</td>
 															<td class="font-size-sm">2020-06-21</td>
 															<td>
-																<a href="https://www.youtube.com/watch?v=XSGBVzeBUbk"
-																	data-lity class="btn btn-default btn-icon btn-sm"
-																	data-toggle="tooltip" title=""
-																	data-original-title="미리보기">
+																<a href="#none"class="btn btn-default btn-icon btn-sm" data-toggle="modal" data-target="#preview03">
 																	<i class="la la-eye"></i>
 																</a>
 																<span class="btn btn-default btn-icon btn-sm"
@@ -882,6 +874,92 @@
 		</div>
 	</div>
 	<!-- end:: 설정 모달창 -->
+	<!-- begin:: 미리보기1 모달창 -->
+	<div class="modal fade bg-dark-o-50" id="preview01" tabindex="-1" aria-labelledby="contPreview" aria-modal="true"
+		role="dialog">
+		<div class="modal-lg modal-dialog modal-dialog-centered px-5" role="document">
+			<div class="modal-content overflow-hidden">
+				<div class="modal-body py-10">
+					<div class="row">
+						<div class="col-12">
+							<h5 class="font-weight-bold mb-4">먹물 무기를 가진 문어ㅣ바다생물 자연 관찰 학습
+							</h5>
+							<div class="interactive-video">
+								<div class="vdo-container">
+									<iframe src="https://www.1gram.cc/bubble/embed/1396" style="width:100%;"
+										frameborder=”0″ marginwidth=”0″ marginheight=”0″ scrolling=””></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer text-center py-2">
+					<a href="#" class="btn btn-secondary font-weight-bold" data-dismiss="modal"
+						aria-label="Close">닫기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end:: 미리보기1 모달창 -->
+	<!-- begin:: 미리보기2 모달창 -->
+	<div class="modal fade bg-dark-o-50" id="preview02" tabindex="-1" aria-labelledby="contPreview" aria-modal="true"
+		role="dialog">
+		<div class="modal-lg modal-dialog modal-dialog-centered px-5" role="document">
+			<div class="modal-content overflow-hidden">
+				<div class="modal-body py-10">
+					<div class="row">
+						<div class="col-12">
+							<h5 class="font-weight-bold mb-4">먹물 무기를 가진 문어ㅣ바다생물 자연 관찰 학습
+							</h5>
+							<div class="presentation">
+								<div>
+									<img src="../../assets/media/1gram-img/default-image.png" class="d-block w-100" alt="...">
+								</div>
+								<div>
+									<img src="../../assets/media/1gram-img/default-image.png" class="d-block w-100" alt="...">
+								</div>
+								<div>
+									<img src="../../assets/media/1gram-img/default-image.png" class="d-block w-100" alt="...">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer text-center py-2">
+					<a href="#" class="btn btn-secondary font-weight-bold" data-dismiss="modal"
+						aria-label="Close">닫기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end:: 미리보기2 모달창 -->
+	<!-- begin:: 미리보기3 모달창 -->
+	<div class="modal fade bg-dark-o-50" id="preview03" tabindex="-1" aria-labelledby="contPreview" aria-modal="true"
+		role="dialog">
+		<div class="modal-lg modal-dialog modal-dialog-centered px-5" role="document">
+			<div class="modal-content overflow-hidden">
+				<div class="modal-body py-10">
+					<div class="row">
+						<div class="col-12">
+							<h5 class="font-weight-bold mb-4">먹물 무기를 가진 문어ㅣ바다생물 자연 관찰 학습
+							</h5>
+							<div class="interactive-video">
+								<div class="vdo-container">
+									<iframe src="https://www.1gram.cc/bubble/embed/1396" style="width:100%;"
+										frameborder=”0″ marginwidth=”0″ marginheight=”0″ scrolling=””></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer text-center py-2">
+					<a href="#" class="btn btn-secondary font-weight-bold" data-dismiss="modal"
+						aria-label="Close">닫기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end:: 미리보기3 모달창 -->
 
 	<!--begin::G"./assetsheme Bundle(used by all pages)-->
 	<script src="../../assets/plugins/global/plugins.bundle.js"></script>
@@ -891,7 +969,18 @@
 	<!--begin::P"./assetsipts(used by this page)-->
 	<script src="../../assets/js/pages/admin-script.js"></script>
 	<script src="../../assets/js/pages/lity.js"></script>
+	<script src="../../assets/js/pages/slick.js"></script>
 	<!--end::Page Scripts-->
+
+	<script>
+		$('.presentation').slick({
+			dots: true,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			adaptiveHeight: true
+		});
+	</script>	
 </body>
 <!--end::Body-->
 

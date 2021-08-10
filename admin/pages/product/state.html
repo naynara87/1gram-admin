@@ -110,7 +110,7 @@
 						data-menu-dropdown-timeout="500">
 						<!--begin::Menu Nav-->
 						<ul class="menu-nav pt-0">
-							<li class="menu-item menu-item-active" aria-haspopup="true" data-menu-toggle="hover">
+							<li class="menu-item" aria-haspopup="true" data-menu-toggle="hover">
 								<a href="../1gram-contents/cont-list.html" class="menu-link">
 									<span class="svg-icon menu-icon svg-icon-white">
 										<svg xmlns="http://www.w3.org/2000/svg"
@@ -469,34 +469,55 @@
 												<i class="menu-bullet menu-bullet-line">
 													<span></span>
 												</i>
-												<span class="menu-text">OS/브라우저분석​리</span>
+												<span class="menu-text">디바이스 분석</span>
 											</a>
 										</li>
 									</ul>
 								</div>
 							</li>
-							<li class="menu-item" aria-haspopup="true" data-menu-toggle="hover">
-								<a href="../product/state.html" class="menu-link">
+							<li class="menu-item menu-item-submenu menu-item-open" aria-haspopup="true" data-menu-toggle="hover">
+								<a href="javascript:;" class="menu-link menu-toggle">
 									<span class="svg-icon menu-icon svg-icon-white">
 										<svg xmlns="http://www.w3.org/2000/svg"
 											xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
 											viewBox="0 0 24 24" version="1.1">
 											<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 												<rect x="0" y="0" width="24" height="24" />
+												<rect fill="#000000" opacity="0.3" x="7" y="4" width="3" height="13"
+													rx="1.5" />
+												<rect fill="#000000" opacity="0.3" x="12" y="9" width="3" height="8"
+													rx="1.5" />
 												<path
-													d="M3.5,21 L20.5,21 C21.3284271,21 22,20.3284271 22,19.5 L22,8.5 C22,7.67157288 21.3284271,7 20.5,7 L10,7 L7.43933983,4.43933983 C7.15803526,4.15803526 6.77650439,4 6.37867966,4 L3.5,4 C2.67157288,4 2,4.67157288 2,5.5 L2,19.5 C2,20.3284271 2.67157288,21 3.5,21 Z"
-													fill="#000000" opacity="0.3" />
-												<path
-													d="M12,13 C10.8954305,13 10,12.1045695 10,11 C10,9.8954305 10.8954305,9 12,9 C13.1045695,9 14,9.8954305 14,11 C14,12.1045695 13.1045695,13 12,13 Z"
-													fill="#000000" opacity="0.3" />
-												<path
-													d="M7.00036205,18.4995035 C7.21569918,15.5165724 9.36772908,14 11.9907452,14 C14.6506758,14 16.8360465,15.4332455 16.9988413,18.5 C17.0053266,18.6221713 16.9988413,19 16.5815,19 C14.5228466,19 11.463736,19 7.4041679,19 C7.26484009,19 6.98863236,18.6619875 7.00036205,18.4995035 Z"
-													fill="#000000" opacity="0.3" />
+													d="M5,19 L20,19 C20.5522847,19 21,19.4477153 21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 C4.55228475,3 5,3.44771525 5,4 L5,19 Z"
+													fill="#000000" fill-rule="nonzero" />
+												<rect fill="#000000" opacity="0.3" x="17" y="11" width="3" height="6"
+													rx="1.5" />
 											</g>
 										</svg>
 									</span>
 									<span class="menu-text">상품관리</span>
+									<i class="menu-arrow"></i>
 								</a>
+								<div class="menu-submenu">
+									<ul class="menu-subnav">
+										<li class="menu-item menu-item-active" aria-haspopup="true">
+											<a href="../product/state.html" class="menu-link">
+												<i class="menu-bullet menu-bullet-line">
+													<span></span>
+												</i>
+												<span class="menu-text">상품현황</span>
+											</a>
+										</li>
+										<li class="menu-item" aria-haspopup="true">
+											<a href="../product/setting.html" class="menu-link">
+												<i class="menu-bullet menu-bullet-line">
+													<span></span>
+												</i>
+												<span class="menu-text">설정하기</span>
+											</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 						<!--end::Menu Nav-->
@@ -592,7 +613,7 @@
 								<!--begin::Page Heading-->
 								<div class="d-flex align-items-baseline flex-wrap justify-content-between w-100">
 									<!--begin::Page Title-->
-									<h5 class="text-dark font-weight-bold my-1 mr-5">접속자 분석</h5>
+									<h5 class="text-dark font-weight-bold my-1 mr-5">상품관리</h5>
 									<!--end::Page Title-->
 									<!--begin::Breadcrumb-->
 									<ul
@@ -601,10 +622,10 @@
 											<a href="" class="text-muted"><i class="fas fa-home"></i></a>
 										</li>
 										<li class="breadcrumb-item text-muted">
-											<a href="" class="text-muted">접속통계</a>
+											<a href="" class="text-muted">상품관리</a>
 										</li>
 										<li class="breadcrumb-item text-muted">
-											<a href="" class="text-muted">접속자 분석</a>
+											<a href="" class="text-muted">상품현황</a>
 										</li>
 									</ul>
 									<!--end::Breadcrumb-->
@@ -695,33 +716,16 @@
 										<!--end::Header-->
 										<!--begin::Body-->
 										<div class="card-body overflow-auto">
-											<div id="userChart_01"></div>
-											<table class="table table-bordered mt-5">
-												<colgroup>
-													<col width="22%">
-													<col>
-													<col width="22%">
-													<col>
-												</colgroup>
-												<tr>
-													<td class="bg-secondary-o-30">총 접속자 수</td>
-													<td><b>970</b>명</td>
-													<td class="bg-secondary-o-30">평균 접속자 수</td>
-													<td><b>970</b>명</td>
-												</tr>
-												<tr>
-													<td class="bg-secondary-o-30">오늘 접속자 수</td>
-													<td><b>3</b>명</td>
-													<td class="bg-secondary-o-30">어제 접속자 수</td>
-													<td><b>8</b>명</td>
-												</tr>
-												<tr>
-													<td class="bg-secondary-o-30">이번달 접속자 수</td>
-													<td><b>2217</b>명</td>
-													<td class="bg-secondary-o-30">이번달 평균 접속자 수</td>
-													<td><b>270</b>명</td>
-												</tr>
-											</table>
+											<div class="row">
+												<div class="col-md-7">
+													<p class="font-weight-bold">요금제 사용현황</p>
+													<div id="ratePlan"></div>
+												</div>
+												<div class="col-md-5">
+													<p class="font-weight-bold">이용자 수</p>
+													<div id="userStatus"></div>
+												</div>
+											</div>
 										</div>
 										<!--end::Body-->
 									</div>
@@ -768,10 +772,97 @@
 	<script src="../../assets/js/scripts.bundle.js"></script>
 	<!--end::Global Theme Bundle-->
 	<!--begin::P"./assetsipts(used by this page)-->
-	<script src="../../assets/js/pages/features/charts/apexcharts.js"></script>
+	
 	<script src="../../assets/js/pages/features/forms/widgets/bootstrap-datepicker.js"></script>
 	<script src="../../assets/js/pages/admin-script.js"></script>
 	<!--end::Page Scripts-->
+
+
+	<!-- chart 스크립트 샘플 -->
+	<script>
+	var options = {
+		series: [{
+		  name: "Free",
+		  data: [45, 52, 38, 24, 33, 26, 21, 20, 6, 8, 15, 10]
+		},
+		{
+		  name: "Slim",
+		  data: [35, 41, 62, 42, 13, 18, 29, 37, 36, 51, 32, 35]
+		},
+		{
+		  name: 'Basic',
+		  data: [87, 57, 74, 99, 75, 38, 62, 47, 82, 56, 45, 47]
+		},
+		{
+		  name: 'Premium',
+		  data: [17, 27, 0, 9, 5, 8, 2, 7, 2, 6, 5, 7]
+		}
+	  ],
+		chart: {
+		height: 350,
+		type: 'line',
+		zoom: {
+		  enabled: false
+		},
+	  },
+	  dataLabels: {
+		enabled: false
+	  },
+	  stroke: {
+		width: 4,
+		curve: 'straight',
+	  },
+	  legend: {
+		tooltipHoverFormatter: function(val, opts) {
+		  return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
+		}
+	  },
+	  markers: {
+		size: 0,
+		hover: {
+		  sizeOffset: 6
+		}
+	  },
+	  xaxis: {
+		categories: ['01월', '02월', '03월', '04월', '05월', '06월', '07월', '08월', '09월',
+		  '10월', '11월', '12월'
+		],
+	  },
+	  grid: {
+		borderColor: '#f1f1f1',
+	  }
+	  };
+
+	  var chart = new ApexCharts(document.querySelector("#ratePlan"), options);
+	  chart.render();
+
+
+	  var options = {
+          series: [44, 55, 13, 43],
+          chart: {
+          width: 430,
+          type: 'pie',
+        },
+		legend: {
+			position: 'bottom'
+		},
+        labels: ['Free', 'Slim', 'Basic', 'Premium'],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 380
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#userStatus"), options);
+        chart.render();
+	</script>
 </body>
 <!--end::Body-->
 

@@ -1049,7 +1049,7 @@ select::-ms-expand {
 }
 
 .slick-list {
-  height: 300px;
+  height: auto;
 }
 
 .sec-05 .card img {
@@ -1697,4 +1697,3 @@ select[name="student_datatable_length"]{
   background-color: #fff;
   margin-bottom: 10px;
 }
-.lecDataBox-contents{}

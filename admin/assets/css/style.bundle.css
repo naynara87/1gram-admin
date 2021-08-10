@@ -81837,7 +81837,7 @@ select::-ms-expand {
 }
 
 .slick-list {
-  height: 300px;
+  height: auto;
 }
 
 .sec-05 .card img {
@@ -82704,6 +82704,10 @@ body .aside .aside-menu.ps > .ps__rail-y > .ps__thumb-y {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  height: calc(1.5em + 1.3rem);
 }
 
 /*# sourceMappingURL=style.bundle.css.map*/
